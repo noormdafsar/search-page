@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'poppons', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+  /* background-image: url(./image/images\ \(2\).png);
+  background-position: center;
+  background-size: cover; */
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+    margin-left: 550px;
+}
+
+section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+form button[type="submit"] {
+  display: flex;
+  width: 25%;
+  text-align: center;
+  justify-content: center;
+  margin-left:125px ;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: rgb(2, 74, 255);
+  animation: ease-in-out 0.5s infinite;
+  transition: all 0.4s;
+  transform: scale(1.04);
+}
+#candidate-list {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#candidates {
+  list-style-type: none;
+}
+
+#candidates li {
+  margin-bottom: 10px;
+}
+
+/* Keyframe animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation on list items */
+#candidates li {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+footer {
+    text-align: center;
+    font-size: medium;
+    color: #000000;
+}
